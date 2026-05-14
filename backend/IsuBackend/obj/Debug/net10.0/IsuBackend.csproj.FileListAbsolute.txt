@@ -52,3 +52,4 @@ C:\Users\Christian Avila\isu-evaluation-main\backend\IsuBackend\obj\Debug\net10.
 C:\Users\Christian Avila\isu-evaluation-main\backend\IsuBackend\obj\Debug\net10.0\IsuBackend.pdb
 C:\Users\Christian Avila\isu-evaluation-main\backend\IsuBackend\obj\Debug\net10.0\IsuBackend.genruntimeconfig.cache
 C:\Users\Christian Avila\isu-evaluation-main\backend\IsuBackend\obj\Debug\net10.0\ref\IsuBackend.dll
+C:\Users\Christian Avila\isu-evaluation-main\backend\IsuBackend\obj\Debug\net10.0\IsuBackend.sourcelink.json

@@ -5,7 +5,12 @@ const apiBase = (() => {
   }
 
   if (typeof window !== 'undefined') {
-    return `${window.location.protocol}//${window.location.hostname}:5138`;
+    const { protocol, hostname } = window.location;
+    const isLocalhost = hostname === 'localhost' || hostname === '127.0.0.1' || hostname === '::1';
+    if (isLocalhost) {
+      return `${protocol}//${hostname}:5138`;
+    }
+    return `${protocol}//${hostname}`;
   }
 
   return 'http://localhost:5138';

@@ -34,6 +34,10 @@ else
 
 builder.Services.AddSingleton<IsuBackend.Services.AiService>();
 
+// Use Render's assigned port if available, otherwise default to 5138 for local debugging.
+var port = Environment.GetEnvironmentVariable("PORT") ?? "5138";
+builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
